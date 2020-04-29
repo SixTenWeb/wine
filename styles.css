@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;300&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+ */
+
+
+ /* GENERAL STYLES */
+ *,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --black: #242423;
+    --dark-grey: #333533;
+    --light-grey: #CFDBD5;
+    --plava: #476C9B;   
+    --bordo: crimson;
+ }
+
+ body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black)
+}
+
+h1, h2 {
+    font-weight: 300;    
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SPECIFIC STYLES */
+/* nav */
+.nav_wrapper {
+    border-bottom:1px solid var(--light-grey);
+}
+
+#nav_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    margin: 1em auto;
+    opacity: 0.9;
+    max-width: 1200px;
+}
+
+.nav_logo {
+    max-height:65px;
+}
+
+.nav_list {
+    display: none;
+}
+
+.nav-list a {
+    display: inline-block;
+}
+
+.nav_bar {
+    font-size: 2em;
+}
+
+.fas + .fas {
+    padding-left: 1em;
+}
+
+.fa-bars {
+    color: var(--bordo)
+}
+
+/* section */
+h1 {
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 1px solid var(--bordo);
+    padding: 0.5em;
+}
+
+.wine_item {
+    margin: 2em;
+    text-align: center;
+}
+
+
+.wine_box {
+    position: relative;
+}
+
+.wine_hover {
+    color: #fff;
+    font-size: 3em;
+    background: var(--bordo);
+    display: inline-block;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.wine_img {
+    transition: opacity 0.6s ease;
+}
+.wine_box:hover .wine_img {
+    opacity: 0.2;
+}
+.wine_box:hover .wine_hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+footer {    
+    text-align: center;
+    background: var(--dark-grey);
+    padding: 2em;
+    color: var(--light-grey)
+}
+
+.socials {
+    font-size: 2em;
+}
+
+.fab + .fab{
+    padding-left: 0.3em;
+}
+
+.fab:hover {
+    color: crimson;
+}
+
+/* Media Queries */
+@media screen and (min-width:576px){
+    .wine_shop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .wine_item {
+        margin: 2em 0;
+    }    
+}
+
+@media screen and (min-width:900px) {
+    .wine_shop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav_menu {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav_list {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;  
+        list-style: none;
+
+    }
+
+    .nav_item:last-child {
+        margin-right: 5%;
+    }
+
+    .nav_item a{
+        color: var(--black);
+        padding: 1em;
+    }
+    .nav_item a:hover{
+        background-color: var(--bordo);
+        color: #fff;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .wine_shop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/*
+
+@media screen and (min-width:800px) {
+    .wine_shop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav_menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .nav_list {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;    
+    }
+
+    .nav_item:last-child {
+        margin-right: 5%;
+    }
+
+    .nav_item a{
+        padding: 1em;
+        color: var(--black);
+    }
+    .nav_item a:hover{
+        background-color: var(--bordo);
+        color: #fff;
+    }    
+
+    .fa-bars {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (min-width:1100px) {
+    .wine_shop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+} */
+
+
+
+
+
+
+
+
+
+
