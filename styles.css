@@ -199,57 +199,6 @@ footer {
 }
 
 
-/*
-
-@media screen and (min-width:800px) {
-    .wine_shop {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .nav_menu {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-
-    }
-
-    .nav_list {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        list-style: none;
-        align-items: center;    
-    }
-
-    .nav_item:last-child {
-        margin-right: 5%;
-    }
-
-    .nav_item a{
-        padding: 1em;
-        color: var(--black);
-    }
-    .nav_item a:hover{
-        background-color: var(--bordo);
-        color: #fff;
-    }    
-
-    .fa-bars {
-        display: none;
-    }
-
-    
-}
-
-@media screen and (min-width:1100px) {
-    .wine_shop {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-} */
-
 
 
 
